@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monash “Get Started” — Biffin Francis</title>
+  <meta name="description" content="Monash Get Started case study — a semester-based onboarding journey for 15,000+ international students." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300&family=Inter:wght@400;500&family=Space+Grotesk:wght@700&family=JetBrains+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="site-nav"></div>
+
+  <main>
+    <!-- Hero -->
+    <section class="section--tight">
+      <div class="container">
+        <a class="case-back" href="work.html">← All work</a>
+        <h1 class="display mt-24">Monash — “Get Started” Redesign</h1>
+        <p class="eyebrow mt-16">UI/UX Design · Live</p>
+        <p class="hero__intro mt-16" style="max-width: 680px;">
+          A student onboarding experience, redesigned to guide 15,000+ international students
+          through their first semester — replacing a scattered web of links with one
+          structured starting point. Live at
+          <a href="https://www.monash.edu/get-started" target="_blank" rel="noopener">monash.edu/get-started</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="section--compact">
+      <div class="container">
+        <p class="eyebrow">Project overview</p>
+        <div class="card card--large mt-24">
+          <div class="case-overview">
+            <div class="case-overview__item">
+              <span class="case-overview__label">Role</span>
+              <span class="case-overview__value">UI/UX Designer</span>
+            </div>
+            <div class="case-overview__item">
+              <span class="case-overview__label">Status</span>
+              <span class="case-overview__value">Live · monash.edu/get-started</span>
+            </div>
+            <div class="case-overview__item">
+              <span class="case-overview__label">Audience</span>
+              <span class="case-overview__value">15,000+ international students</span>
+            </div>
+            <div class="case-overview__item">
+              <span class="case-overview__label">Tools</span>
+              <span class="case-overview__value">Figma, Adobe CC</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Challenge / Approach / Impact -->
+    <section class="section--tight">
+      <div class="container stack-40">
+
+        <div class="case-block">
+          <div class="case-block__title">The challenge</div>
+          <div class="case-block__body">
+            <p>Starting university in a new country is overwhelming. International students
+            arriving at Monash had no clear starting point — the existing experience was
+            scattered, unstructured, and organised around the website rather than the
+            student's journey.</p>
+            <figure class="case-figure case-figure--inline">
+              <img src="images/monash-old-page.png" alt="The old Monash Getting Started page — walls of text under a generic blue header, organised around the website rather than the student" />
+              <figcaption>The old “Getting started” page — walls of text, organised around the website, not the student's journey.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <hr class="case-divider" />
+
+        <div class="case-block">
+          <div class="case-block__title">Mapping the journey</div>
+          <div class="case-block__body">
+            <p>Moving abroad for university isn't just about studying — it's a full life
+            transition. Research into the old experience surfaced sharp gaps:</p>
+            <ul>
+              <li><strong>90%</strong> had no idea what to prepare before arriving in Australia.</li>
+              <li><strong>82%</strong> didn't know about the facilities the university provided.</li>
+              <li>No Australian university offered a structured journey built around the student's <strong>semester timeline</strong>.</li>
+            </ul>
+            <p>I mapped the full student journey by pain level — and the spike was unmistakable:
+            <strong>Pre-Admission through Arrival all scored high pain</strong>, long before
+            students ever set foot on campus.</p>
+            <figure class="case-figure case-figure--inline">
+              <img src="images/monash-journey-map.png" alt="Student journey mapped by pain level across seven phases — Pre-Admission, Admission, Pre-Departure and Arrival all high pain; Orientation Week medium; Start and End of Semester low" />
+              <figcaption>Journey mapped by pain — the first four phases, before and just after arrival, were where students struggled most.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <hr class="case-divider" />
+
+        <div class="case-block">
+          <div class="case-block__title">Exploring the layout</div>
+          <div class="case-block__body">
+            <p>The layout had to communicate that this was a <strong>journey, not a
+            checklist</strong>. I worked through three directions — a sequential list (felt like
+            fixed, mandatory steps), a non-linear tile grid (size signals importance, not order),
+            and a vertical left sidebar (unlimited stages, always visible, experienced as one
+            continuous journey). The sidebar won.</p>
+            <figure class="case-figure case-figure--inline">
+              <img src="images/monash-iterations.png" alt="Three layout iterations — a sequential list, a non-linear tile grid where size equals importance, and a vertical left sidebar experienced as a continuous downward journey" />
+              <figcaption>Three layout directions — landing on a continuous, scrollable journey rather than a rigid checklist.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <hr class="case-divider" />
+
+        <div class="case-block">
+          <div class="case-block__title">The card system</div>
+          <div class="case-block__body">
+            <p>A small, consistent card system carried the whole site:</p>
+            <ul>
+              <li><strong>Card anatomy</strong> — three building blocks (icon + header + sub-header), scaled back to just a header when a topic is self-explanatory.</li>
+              <li><strong>Colour = priority</strong> — yellow for the single highest-priority action per section, dark navy for high-stakes topics (money, disability, mental health), blues for informational, grey and white for supporting content.</li>
+            </ul>
+            <figure class="case-figure case-figure--inline">
+              <img src="images/monash-card-system.png" alt="The Monash card system — three building blocks (icon, header, sub-header) with reduced variants, and a colour-priority key from yellow primary through dark navy, light blue, grey and white" />
+              <figcaption>A small card system — three building blocks, and colour reserved to signal priority.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <hr class="case-divider" />
+
+        <div class="case-block">
+          <div class="case-block__title">The solution: a contextual site</div>
+          <div class="case-block__body">
+            <p>The result adapts to where each student is in their journey.
+            <strong>Before the semester starts</strong>, it surfaces preparation and orientation;
+            <strong>during the semester</strong>, it shifts to week-by-week study support — same
+            site, different view.</p>
+            <figure class="case-figure case-figure--inline">
+              <img src="images/monash-final-designs.png" alt="Grid of final Get Started designs comparing the site during semester (study support, weekly views) against the site before semester starts (welcome, prepare for uni, first semester)" />
+              <figcaption>One site, two states — before semester vs. during semester.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact -->
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">The impact</p>
+        <div class="stat-grid mt-24">
+          <div class="card">
+            <div class="stat__num">15k+</div>
+            <div class="stat__label">Unique visitors — new students each semester start</div>
+          </div>
+          <div class="card">
+            <div class="stat__num">68%</div>
+            <div class="stat__label">Return visitor rate as the semester progresses</div>
+          </div>
+          <div class="card">
+            <div class="stat__num">1 link</div>
+            <div class="stat__label">Replaced every scattered link, by senior-leadership decision</div>
+          </div>
+          <div class="card">
+            <div class="stat__num">Live</div>
+            <div class="stat__label">Shipped and in use at monash.edu/get-started</div>
+          </div>
+        </div>
+        <div class="impact-proof mt-64">
+          <p>The clearest signal of impact: Monash leadership chose to
+          <strong>replace every scattered link with this one page</strong> — and embedded it
+          directly into the official offer letter sent to every international student, alongside
+          the steps to accept their place.</p>
+          <figure class="case-figure case-figure--portrait">
+            <img src="images/monash-offer-letter.png" alt="A Monash University international student offer letter with the Get Started website link (monash.edu/get-started) embedded in the acceptance instructions" />
+            <figcaption>Endorsement at the highest level — the “Get Started” link now ships inside every Monash international offer letter.</figcaption>
+          </figure>
+        </div>
+        <div class="hero__cta">
+          <a class="btn btn--secondary mt-32" href="work.html">← Back to all work</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="main.js"></script>
+</body>
+</html>

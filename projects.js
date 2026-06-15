@@ -1,0 +1,69 @@
+/* =========================================================================
+   projects.js — the project list (source of truth for the Work page grid).
+
+   TO ADD A NEW PROJECT:
+   1. Duplicate one of the project-*.html pages and write the case study.
+   2. Add one entry to the PROJECTS array below.
+   That's it — the Work page card grid updates automatically.
+
+   thumb: 'thumb--1' | 'thumb--2' | 'thumb--3'  (monochrome placeholder tiles;
+          add more variants in styles.css, or swap for a real <img> later)
+   ========================================================================= */
+
+const PROJECTS = [
+  {
+    slug: 'project-credi8.html',
+    title: 'Credi8 — Dental Payments Platform',
+    meta: 'Product Design + Brand · 2025–Present',
+    summary:
+      'Solo designer on an end-to-end web app and brand identity that lets dental clinics offer transparent, flexible payment plans.',
+    thumb: 'thumb--1',
+    thumbImage: 'images/credi8-logo.png',
+    thumbLabel: 'Credi8',
+  },
+  {
+    slug: 'project-sunlife.html',
+    title: 'Sunlife — UX Measurement Framework',
+    meta: 'Experience Strategy · 2024',
+    summary:
+      'A unified framework for measuring and reporting design impact across Sunlife’s global product teams — turning scattered metrics into one shared standard.',
+    thumb: 'thumb--2',
+    thumbImage: 'images/sunlife-logo.png',
+    thumbLabel: 'Sunlife',
+  },
+  {
+    slug: 'project-monash.html',
+    title: 'Monash — “Get Started” Redesign',
+    meta: 'UI/UX Design · Live',
+    summary:
+      'A semester-based onboarding journey guiding 15,000+ international students, replacing a scattered web of links with one structured starting point.',
+    thumb: 'thumb--3',
+    thumbImage: 'images/monash-logo.png',
+    thumbLabel: 'Monash',
+  },
+];
+
+function renderProjectCard(p) {
+  const thumbContent = p.thumbImage
+    ? `<img class="project-card__thumb-img" src="${p.thumbImage}" alt="${p.title} logo" />`
+    : `<span class="project-card__thumb-label">${p.thumbLabel}</span>`;
+  return `
+    <a class="project-card" href="${p.slug}">
+      <div class="project-card__thumb ${p.thumb}">
+        ${thumbContent}
+      </div>
+      <div class="project-card__body">
+        <span class="project-card__meta">${p.meta}</span>
+        <span class="project-card__title">${p.title}</span>
+        <span class="project-card__summary">${p.summary}</span>
+        <span class="project-card__cta">Read case study →</span>
+      </div>
+    </a>`;
+}
+
+function mountProjects() {
+  const grid = document.getElementById('project-grid');
+  if (grid) grid.innerHTML = PROJECTS.map(renderProjectCard).join('');
+}
+
+document.addEventListener('DOMContentLoaded', mountProjects);

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work — Biffin Francis</title>
+  <meta name="description" content="Selected product design case studies by Biffin Francis." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300&family=Inter:wght@400;500&family=Space+Grotesk:wght@700&family=JetBrains+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="site-nav"></div>
+
+  <main>
+    <section class="section--tight">
+      <div class="container">
+        <p class="eyebrow">Selected work</p>
+        <h1 class="display mt-16">Case studies in clarity.</h1>
+        <p class="hero__intro mt-16" style="max-width: 620px;">
+          A close look at three projects — the problem, the approach, and the measurable
+          impact. Click any project to read the full story.
+        </p>
+      </div>
+    </section>
+
+    <section class="section--tight">
+      <div class="container">
+        <!-- Cards rendered from projects.js — add projects there, not here -->
+        <div id="project-grid" class="project-grid"></div>
+      </div>
+    </section>
+
+    <!-- Downloadable deck -->
+    <section class="section--tight">
+      <div class="container">
+        <p class="eyebrow">Go deeper</p>
+        <div class="card card--large mt-24 deck-cta">
+          <div class="deck-cta__text">
+            <span class="heading-sm">Want the full story?</span>
+            <p>A detailed deck with the complete case studies — process, research,
+            and design decisions in depth.</p>
+          </div>
+          <a class="btn btn--primary deck-cta__btn" href="files/Biffin-Francis-Portfolio.pptx" download>
+            ↓ Download deck (PPTX · 4.8 MB)
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="projects.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
