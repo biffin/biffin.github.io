@@ -32,14 +32,34 @@ const PROJECTS = [
     thumbLabel: 'Sunlife',
   },
   {
+    slug: 'project-helpshift.html',
+    title: 'Helpshift — Redefining the Help Center Experience',
+    meta: 'Design Lead · 2021–2022',
+    summary:
+      'Redesigning a customer-support Help Center into a modern, modular self-service experience for a platform serving 33M+ users.',
+    thumb: 'thumb--4',
+    thumbImage: 'images/helpshift-logo.png',
+    thumbLabel: 'Helpshift',
+  },
+  {
     slug: 'project-monash.html',
     title: 'Monash — “Get Started” Redesign',
-    meta: 'UI/UX Design · Live',
+    meta: 'UI/UX Design · 2017',
     summary:
       'A semester-based onboarding journey guiding 15,000+ international students, replacing a scattered web of links with one structured starting point.',
     thumb: 'thumb--3',
     thumbImage: 'images/monash-logo.png',
     thumbLabel: 'Monash',
+  },
+  {
+    slug: 'project-infillcube.html',
+    title: 'Infillcube — UI for an Industrial 3D Printer',
+    meta: 'Design Lead · 2018',
+    summary:
+      'Designing the on-device touchscreen UI for the C300 industrial 3D printer — usable by technical and non-technical operators, within tight hardware limits.',
+    thumb: 'thumb--5',
+    thumbImage: 'images/infillcube-logo.png',
+    thumbLabel: 'Infillcube',
   },
 ];
 

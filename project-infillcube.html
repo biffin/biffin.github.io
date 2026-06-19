@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infillcube — Biffin Francis</title>
+  <meta name="description" content="Infillcube case study — designing the on-device touchscreen UI for the C300 industrial 3D printer, usable by technical and non-technical operators within tight hardware limits." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300&family=Inter:wght@400;500&family=Space+Grotesk:wght@700&family=JetBrains+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="site-nav"></div>
+
+  <main>
+    <!-- Hero -->
+    <section class="section--tight">
+      <div class="container">
+        <a class="case-back" href="work.html">← All work</a>
+        <div class="hero-split mt-32">
+          <div>
+            <h1 class="display">Infillcube — UI for an Industrial 3D Printer</h1>
+            <p class="eyebrow mt-16">Design Lead · 2018</p>
+            <p class="hero__intro mt-24">
+              Industrial 3D printers are built for output, not for people — locked behind
+              technical jargon, sparse interfaces and dense manuals. For Infillcube's C300, I led
+              the design of an on-device touchscreen that a complete beginner could operate, all
+              within a <strong>256&nbsp;KB</strong> memory budget and a greyscale screen.
+            </p>
+            <div class="hero__cta">
+              <a class="btn btn--secondary mt-24" href="https://infillcube.com/" target="_blank" rel="noopener">Visit Infillcube ↗</a>
+            </div>
+          </div>
+          <figure class="case-figure">
+            <img src="images/infillcube-product-front.jpg" alt="The Infillcube C300 industrial 3D printer, front view, with its touchscreen interface lit up and a print in progress behind the glass door" />
+            <figcaption>The C300 — Infillcube's affordable industrial 3D printer, with the touchscreen I designed mounted at the top.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="section--compact">
+      <div class="container">
+        <p class="eyebrow">Project overview</p>
+        <div class="card card--large mt-24">
+          <div class="case-overview">
+            <div class="case-overview__item">
+              <span class="case-overview__label">Role</span>
+              <span class="case-overview__value">Design Lead — research &amp; UI</span>
+            </div>
+            <div class="case-overview__item">
+              <span class="case-overview__label">Timeline</span>
+              <span class="case-overview__value">Jul 2018 → Nov 2018</span>
+            </div>
+            <div class="case-overview__item">
+              <span class="case-overview__label">Product</span>
+              <span class="case-overview__value">C300 industrial 3D printer</span>
+            </div>
+            <div class="case-overview__item">
+              <span class="case-overview__label">Constraints</span>
+              <span class="case-overview__value">800×400px · greyscale · 256KB memory</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Body -->
+    <section class="section--tight">
+      <div class="container stack-40">
+
+        <div class="case-block">
+          <div class="case-block__title">The challenge</div>
+          <div class="case-block__body">
+            <p>Industrial printers lean on technical expertise. They ship with cluttered
+            interfaces, little to no remote support, and a learning curve steep enough that
+            owners stay dependent on the manufacturer long after purchase.</p>
+            <p>The brief was to break that pattern: an interface a
+            <strong>non-technical operator could pick up</strong>, without giving up the
+            control technical users expect. I structured the project around the
+            <strong>Double Diamond</strong> — Discover, Define, Develop, Deliver.</p>
+          </div>
+        </div>
+
+        <hr class="case-divider" />
+
+        <div class="case-block">
+          <div class="case-block__title">Designing within hard limits</div>
+          <div class="case-block__body">
+            <p>The electronics set the rules before a single screen was drawn. The Duet 2.0
+            board gave us a resistive touch panel, a basic stock UI, and just
+            <strong>256&nbsp;KB of flash memory</strong>. Every decision had to earn its
+            storage:</p>
+            <ul>
+              <li><strong>Reusable components, minimal elements</strong> — to fit the entire interface inside the memory budget.</li>
+              <li><strong>Greyscale only</strong> — matching the product's look and keeping every asset light.</li>
+              <li><strong>Large touch targets</strong> — operable from up to two feet away, often with gloves on.</li>
+              <li><strong>Fixed 800×400px screens</strong>, aligned to the panel's placement on the machine.</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="case-divider" />
+
+        <div class="case-block">
+          <div class="case-block__title">Listening to operators</div>
+          <div class="case-block__body">
+            <p>Experienced 3D-printer users were scarce, so Infillcube set up interviews with
+            interested clients. Three findings shaped everything that followed:</p>
+            <ul>
+              <li><strong>A steep learning curve</strong> — new owners lean heavily on the manufacturer well past purchase.</li>
+              <li><strong>Support is everything</strong> — secondary trainers and responsive help make or break the first weeks.</li>
+              <li><strong>The UI is an afterthought</strong> — the whole category obsesses over print output and ignores the operator.</li>
+            </ul>
+            <p>A competitive teardown of industrial-grade printers confirmed it: UX is routinely
+            sacrificed for technical capability, remote support is rare, and dense documentation
+            does the heavy lifting the interface should.</p>
+            <figure class="case-figure case-figure--inline">
+              <img src="images/infillcube-competitive.jpg" alt="A grid of competitor 3D-printer touchscreen interfaces — most dense, icon-heavy and dark, prioritising technical readouts over guidance" />
+              <figcaption>Competitive teardown — across the category, screens were dense, icon-heavy and built for engineers. Almost none offered remote support or any onboarding for a first-time operator.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <hr class="case-divider" />
+
+        <div class="case-block">
+          <div class="case-block__title">From insight to feature pillars</div>
+          <div class="case-block__body">
+            <p>Research narrowed the scope to three things the interface had to do well:</p>
+            <ul>
+              <li><strong>Support integration</strong> — remote diagnostics plus alerts for printer status and issues, so help arrives before a print fails.</li>
+              <li><strong>Visual feedback</strong> — a live progress bar, clear error visualisation, and a print-simulation preview before committing.</li>
+              <li><strong>An intuitive interface</strong> — logically streamlined menus and recognisable icons over text.</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="case-divider" />
+
+        <div class="case-block">
+          <div class="case-block__title">Mapping the print journey</div>
+          <div class="case-block__body">
+            <p>Before designing screens, I mapped the full end-to-end print job — from powering
+            on to retrieving the finished part — then ran a brainstorm with engineering to pin
+            the <strong>pain point and opportunity at every step</strong>. Those opportunities
+            went through a four-way priority matrix (Must-have / Can be done / Nice to have /
+            Won't), which defined a tight, focused MVP.</p>
+            <figure class="case-figure case-figure--inline">
+              <img src="images/infillcube-userflow.jpg" alt="The C300 print workflow mapped as a vertical flow — Initialization, Design Input, Printer Configuration, Calibration, Print Preview, Remote Monitoring, Pause/Cancel, Post-Printing and Troubleshooting, each with a short description" />
+              <figcaption>The nine-step print journey, from power-on to troubleshooting. Mapping it first meant the UI followed how operators actually work — not how the hardware was wired.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <hr class="case-divider" />
+
+        <div class="case-block">
+          <div class="case-block__title">Low fidelity, fast iteration</div>
+          <div class="case-block__body">
+            <p>Low-fidelity screens let me break the complex workflow into manageable steps and
+            test print-job scenarios quickly — adjusting layout and flow long before a pixel was
+            polished.</p>
+            <figure class="case-figure case-figure--inline case-figure--medium">
+              <img src="images/infillcube-lowfi.jpg" alt="Low-fidelity greyscale wireframes of the temperature-setting screens — a persistent left rail of Back/Home/Setting/Print and large touch-friendly controls" />
+              <figcaption>Low-fi wireframes — establishing the persistent left rail, oversized touch targets and the greyscale system early, when changes were cheap.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <hr class="case-divider" />
+
+        <div class="case-block">
+          <div class="case-block__title">The interface, shipped</div>
+          <div class="case-block__body">
+            <p>The final screens carry the whole experience: a consistent left navigation rail,
+            big legible readouts visible from across a workshop, guided calibration, and remote
+            monitoring that even non-technical users found easy. <strong>Two rounds of usability
+            testing</strong> — once on the designs, once integrated into the printer — caught a
+            confusing material-reset flow and an unclear "unreadable file" error, both fixed
+            before launch.</p>
+            <figure class="case-figure case-figure--inline">
+              <img src="images/infillcube-highfi.jpg" alt="Grid of final high-fidelity C300 screens in greyscale — temperature control, multi-extruder status, bed temperature keypad, calibration grid, home menu, live print status with progress, settings and movement controls" />
+              <figcaption>The high-fidelity system — temperature, calibration, live print status and movement controls. One reusable component set, greyscale throughout, all inside 256&nbsp;KB.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact -->
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">The impact</p>
+        <div class="stat-grid mt-24">
+          <div class="card">
+            <div class="stat__num">8</div>
+            <div class="stat__label">Printers sold in the first quarter after launch</div>
+          </div>
+          <div class="card">
+            <div class="stat__num">₹12L</div>
+            <div class="stat__label">Profit (~$14K USD) in the first quarter</div>
+          </div>
+          <div class="card">
+            <div class="stat__num">25</div>
+            <div class="stat__label">Prosthetic arms sponsored — one child per printer sold</div>
+          </div>
+          <div class="card">
+            <div class="stat__num">Shipped</div>
+            <div class="stat__label">Live on the C300 — the printer's first operator-friendly interface</div>
+          </div>
+        </div>
+        <div class="impact-proof mt-64">
+          <p>Beyond the numbers, the C300 powered something bigger. Through
+          <strong>“Hands of Hope”</strong>, Infillcube partnered with
+          <a href="https://enablingthefuture.org/" target="_blank" rel="noopener">e-NABLE</a>
+          to 3D-print custom prosthetic arms for children with symbrachydactyly — sponsoring one
+          child for every printer sold. An interface that made the machine easier to run helped
+          put it in more hands, and those hands made more arms.</p>
+          <figure class="case-figure">
+            <img src="images/infillcube-social.jpg" alt="A news article headlined ‘Extending a 3D-printed prosthetic arm of love’, covering Infillcube's Hands of Hope initiative providing prosthetic arms for children" />
+            <figcaption>“Hands of Hope” in the press — the C300's social mission, sponsoring a prosthetic arm for a child with every printer sold.</figcaption>
+          </figure>
+        </div>
+        <div class="hero__cta">
+          <a class="btn btn--secondary mt-32" href="work.html">← Back to all work</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -15,7 +15,6 @@ const SITE = {
   name: 'Biffin Francis',
   email: 'biffinfrancis@gmail.com',
   linkedin: 'https://www.linkedin.com/in/biffinfrancis/',
-  portfolio: '#', // TODO: replace with your portfolio link
 };
 
 // Base page name without extension, e.g. "/work.html" or "/work" -> "work",
