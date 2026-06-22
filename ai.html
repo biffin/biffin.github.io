@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Lab — Biffin Francis</title>
+  <meta name="description" content="A living space documenting how Biffin Francis designs and builds with AI — starting with this portfolio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300&family=Inter:wght@400;500&family=Space+Grotesk:wght@700&family=JetBrains+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="site-nav"></div>
+
+  <main>
+    <!-- Hero -->
+    <section class="section--tight">
+      <div class="container">
+        <p class="eyebrow">AI Lab</p>
+        <h1 class="display mt-16">Designing with AI, in the open.</h1>
+        <p class="hero__intro mt-16 lab-intro">
+          A living workshop for the things I make <em>with</em> AI — each one a short
+          build log that opens up exactly how it was made, end to end.
+        </p>
+        <p class="lab-prompt mt-24"><span class="lab-prompt__sign">$</span> designing-with-ai <span class="lab-prompt__flag">--status</span> live</p>
+      </div>
+    </section>
+
+    <!-- The Lab -->
+    <section class="section--tight">
+      <div class="container">
+        <p class="eyebrow">Experiments</p>
+        <!-- Cards rendered from ai-lab.js — add experiments there, not here -->
+        <div id="lab-grid" class="lab-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="ai-lab.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

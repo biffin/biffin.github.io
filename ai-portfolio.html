@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Building this portfolio with Claude — Biffin Francis</title>
+  <meta name="description" content="A visual build log: how this portfolio was designed and built with Claude — from a design system to a data-driven site, shown step by step." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300&family=Inter:wght@400;500&family=Space+Grotesk:wght@700&family=JetBrains+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="site-nav"></div>
+
+  <main>
+    <!-- Hero -->
+    <section class="section--tight">
+      <div class="container">
+        <a class="case-back" href="ai.html">← AI Lab</a>
+        <p class="eyebrow mt-32">AI Lab · Build log #02</p>
+        <h1 class="display mt-16">Building this portfolio with Claude</h1>
+        <p class="hero__intro mt-24" style="max-width: 600px;">
+          The clearest proof of how I work with AI is the thing you're looking at.
+          I directed every design decision; Claude handled the build. Here's how — visually.
+        </p>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="section--compact">
+      <div class="container">
+        <div class="card card--large">
+          <div class="case-overview">
+            <div class="case-overview__item">
+              <span class="case-overview__label">My role</span>
+              <span class="case-overview__value">Designer &amp; director</span>
+            </div>
+            <div class="case-overview__item">
+              <span class="case-overview__label">Built with</span>
+              <span class="case-overview__value">Claude (Opus)</span>
+            </div>
+            <div class="case-overview__item">
+              <span class="case-overview__label">Stack</span>
+              <span class="case-overview__value">HTML · CSS · JS — no build step</span>
+            </div>
+            <div class="case-overview__item">
+              <span class="case-overview__label">Status</span>
+              <span class="case-overview__value">Live on GitHub Pages</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The model -->
+    <section class="section--tight">
+      <div class="container">
+        <p class="eyebrow">The model</p>
+        <h2 class="viz-h mt-16">I direct. Claude executes.</h2>
+        <div class="model">
+          <div class="model__card">
+            <span class="model__role">Me</span>
+            <span class="model__name">Designer</span>
+            <ul class="model__list">
+              <li>Taste &amp; judgment</li>
+              <li>Structure &amp; hierarchy</li>
+              <li>Every design decision</li>
+              <li>Direction &amp; review</li>
+            </ul>
+          </div>
+          <div class="model__link" aria-hidden="true">⇄</div>
+          <div class="model__card model__card--ink">
+            <span class="model__role">Claude</span>
+            <span class="model__name">Executor</span>
+            <ul class="model__list">
+              <li>Markup &amp; styles</li>
+              <li>Refactors</li>
+              <li>Image optimisation</li>
+              <li>The keystrokes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The process -->
+    <section class="section--tight">
+      <div class="container">
+        <p class="eyebrow">The process</p>
+        <h2 class="viz-h mt-16">Five moves, idea to live.</h2>
+        <div class="pipeline">
+          <div class="pipe-step">
+            <span class="pipe-step__n">01</span>
+            <span class="pipe-step__t">System</span>
+            <span class="pipe-step__s">design.md tokens</span>
+          </div>
+          <div class="pipe-arrow" aria-hidden="true">→</div>
+          <div class="pipe-step">
+            <span class="pipe-step__n">02</span>
+            <span class="pipe-step__t">Architecture</span>
+            <span class="pipe-step__s">data-driven pages</span>
+          </div>
+          <div class="pipe-arrow" aria-hidden="true">→</div>
+          <div class="pipe-step">
+            <span class="pipe-step__n">03</span>
+            <span class="pipe-step__t">Case studies</span>
+            <span class="pipe-step__s">from raw PDFs</span>
+          </div>
+          <div class="pipe-arrow" aria-hidden="true">→</div>
+          <div class="pipe-step">
+            <span class="pipe-step__n">04</span>
+            <span class="pipe-step__t">Iterate</span>
+            <span class="pipe-step__s">live preview</span>
+          </div>
+          <div class="pipe-arrow" aria-hidden="true">→</div>
+          <div class="pipe-step">
+            <span class="pipe-step__n">05</span>
+            <span class="pipe-step__t">Ship</span>
+            <span class="pipe-step__s">GitHub Pages</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design system -->
+    <section class="section--tight">
+      <div class="container">
+        <p class="eyebrow">Move 01 · The system</p>
+        <h2 class="viz-h mt-16">A system, not a screen.</h2>
+        <p class="viz-lead mt-16">Before any markup, a <strong>design.md</strong> defined the whole
+        visual language as tokens — so every page stays consistent by construction.</p>
+        <div class="ds-grid">
+          <div class="ds-panel">
+            <div class="ds-panel__label">Palette</div>
+            <div class="swatches">
+              <div class="swatch"><span class="swatch__chip" style="background:#fdfcfc"></span><span class="swatch__name">parchment</span></div>
+              <div class="swatch"><span class="swatch__chip" style="background:#f5f3f1"></span><span class="swatch__name">sand</span></div>
+              <div class="swatch"><span class="swatch__chip" style="background:#e5e5e5"></span><span class="swatch__name">border</span></div>
+              <div class="swatch"><span class="swatch__chip" style="background:#a59f97"></span><span class="swatch__name">fog</span></div>
+              <div class="swatch"><span class="swatch__chip" style="background:#777169"></span><span class="swatch__name">driftwood</span></div>
+              <div class="swatch"><span class="swatch__chip" style="background:#000000"></span><span class="swatch__name">ink</span></div>
+            </div>
+          </div>
+          <div class="ds-panel">
+            <div class="ds-panel__label">Type scale</div>
+            <div class="typeladder">
+              <div class="typeladder__row"><span class="typeladder__sample" style="font-size:40px">Display</span><span class="typeladder__meta">DM Sans · 48</span></div>
+              <div class="typeladder__row"><span class="typeladder__sample" style="font-size:26px">Heading</span><span class="typeladder__meta">DM Sans · 32</span></div>
+              <div class="typeladder__row"><span class="typeladder__sample" style="font-size:16px;font-family:var(--font-inter)">Body copy</span><span class="typeladder__meta">Inter · 16</span></div>
+              <div class="typeladder__row"><span class="typeladder__sample" style="font-size:12px;font-family:var(--font-mono)">CAPTION</span><span class="typeladder__meta">JetBrains · mono</span></div>
+            </div>
+          </div>
+          <div class="ds-panel">
+            <div class="ds-panel__label">Spacing rhythm</div>
+            <div class="rhythm">
+              <div class="rhythm__row"><span class="rhythm__bar" style="width:20px"></span><span class="rhythm__label">8</span></div>
+              <div class="rhythm__row"><span class="rhythm__bar" style="width:40px"></span><span class="rhythm__label">16</span></div>
+              <div class="rhythm__row"><span class="rhythm__bar" style="width:60px"></span><span class="rhythm__label">24</span></div>
+              <div class="rhythm__row"><span class="rhythm__bar" style="width:80px"></span><span class="rhythm__label">32</span></div>
+              <div class="rhythm__row"><span class="rhythm__bar" style="width:160px"></span><span class="rhythm__label">64</span></div>
+            </div>
+          </div>
+          <div class="ds-panel">
+            <div class="ds-panel__label">Building blocks</div>
+            <div class="blocks">
+              <span class="blocks__btn blocks__btn--primary">Primary</span>
+              <span class="blocks__btn blocks__btn--secondary">Secondary</span>
+              <span class="blocks__pill">pill · tag</span>
+              <span class="blocks__card">card</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Data-driven -->
+    <section class="section--tight">
+      <div class="container">
+        <p class="eyebrow">Move 02 · The architecture</p>
+        <h2 class="viz-h mt-16">Define once. Render everywhere.</h2>
+        <p class="viz-lead mt-16">The whole site is data-driven. Adding a project means adding
+        one object to <span class="inline-code">projects.js</span> — no file-hopping, no copy-paste.</p>
+        <div class="fanout">
+          <div class="fanout__src">projects.js <span class="com">[ &nbsp;{…}, {…}, {…}&nbsp; ]</span></div>
+          <div class="fanout__arrow" aria-hidden="true">↓ auto-renders</div>
+          <div class="fanout__cards">
+            <div class="fanout__card"><span class="bar bar--t"></span><span class="bar bar--m"></span><span class="bar bar--s"></span></div>
+            <div class="fanout__card"><span class="bar bar--t"></span><span class="bar bar--m"></span><span class="bar bar--s"></span></div>
+            <div class="fanout__card"><span class="bar bar--t"></span><span class="bar bar--m"></span><span class="bar bar--s"></span></div>
+            <div class="fanout__card"><span class="bar bar--t"></span><span class="bar bar--m"></span><span class="bar bar--s"></span></div>
+          </div>
+          <div class="fanout__note">Nav, footer and this AI Lab grid all work the same way.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Iteration -->
+    <section class="section--tight">
+      <div class="container">
+        <p class="eyebrow">Move 04 · The loop</p>
+        <h2 class="viz-h mt-16">Design reviews, in seconds.</h2>
+        <p class="viz-lead mt-16">No specs, no handoff. Plain-language direction in, working interface out.</p>
+        <div class="loop">
+          <div class="loop__step"><b>Say it</b><span>plain language</span></div>
+          <div class="loop__arrow" aria-hidden="true">→</div>
+          <div class="loop__step"><b>See it</b><span>live preview</span></div>
+          <div class="loop__arrow" aria-hidden="true">→</div>
+          <div class="loop__step"><b>Shape it</b><span>review &amp; redirect</span></div>
+          <div class="loop__arrow loop__arrow--back" aria-hidden="true">↺</div>
+        </div>
+        <p class="notes-label">Actual direction I gave, mid-build:</p>
+        <div class="notes">
+          <div class="note">“Let the product carry the hero. Move it beside the headline and let the two share the weight.”<span>→ hero rebalanced</span></div>
+          <div class="note">“This is breathing too much. Close the gap until the eye flows straight from word to image.”<span>→ rhythm tightened</span></div>
+          <div class="note">“That call-to-action should whisper, not shout — make it secondary, and keep that voice everywhere.”<span>→ system-wide consistency</span></div>
+          <div class="note">“Let the story follow the timeline. The order should feel inevitable, not arranged.”<span>→ sequence reordered</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pre-launch polish -->
+    <section class="section--tight">
+      <div class="container">
+        <p class="eyebrow">Move 05 · Before going live</p>
+        <h2 class="viz-h mt-16">The polish nobody sees.</h2>
+        <div class="checklist">
+          <span class="check"><span class="check__tick">✓</span> Every image optimised</span>
+          <span class="check"><span class="check__tick">✓</span> Dead CSS removed</span>
+          <span class="check"><span class="check__tick">✓</span> 0 broken links</span>
+          <span class="check"><span class="check__tick">✓</span> Verified on mobile</span>
+          <span class="check"><span class="check__tick">✓</span> Shipped to GitHub Pages</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- The outcome (qualities, not a scoreboard) -->
+    <section class="section--tight">
+      <div class="container">
+        <p class="eyebrow">The outcome</p>
+        <h2 class="viz-h mt-16">A complete, crafted site — fast, and for nothing.</h2>
+        <div class="outcomes">
+          <div class="outcome">
+            <span class="outcome__k">Speed</span>
+            <span class="outcome__t">Shipped in days, not weeks</span>
+            <p class="outcome__d">Directed in plain language instead of hand-coded line by line — from an empty repo to a live site in a handful of focused sessions.</p>
+          </div>
+          <div class="outcome">
+            <span class="outcome__k">Cost</span>
+            <span class="outcome__t">Zero budget to build or run</span>
+            <p class="outcome__d">No framework, no licences, no paid tools — plain HTML, CSS &amp; JS, hosted for free on GitHub Pages.</p>
+          </div>
+          <div class="outcome">
+            <span class="outcome__k">Control</span>
+            <span class="outcome__t">Designer-led, end to end</span>
+            <p class="outcome__d">No engineering handoff and no spec documents — I owned every decision, from the design system to the final deploy.</p>
+          </div>
+          <div class="outcome">
+            <span class="outcome__k">Longevity</span>
+            <span class="outcome__t">Built to keep growing</span>
+            <p class="outcome__d">Data-driven by design, so adding a new project or AI experiment is a single entry — never a rebuild.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What's next -->
+    <section class="section--tight">
+      <div class="container">
+        <p class="eyebrow">What's next</p>
+        <h2 class="viz-h mt-16">A living project, still being built.</h2>
+        <p class="viz-lead mt-16">This is version one, not a finished artefact. Next on the roadmap:</p>
+        <div class="roadmap">
+          <div class="road">
+            <span class="road__status"><span class="road__dot"></span>Planned</span>
+            <span class="road__t">Google Analytics</span>
+            <p class="road__d">Measure how visitors actually move through the work — and treat the portfolio itself as a product I can read the data on and keep improving.</p>
+          </div>
+          <div class="road">
+            <span class="road__status"><span class="road__dot"></span>Planned</span>
+            <span class="road__t">Payload CMS</span>
+            <p class="road__d">Move case studies and AI Lab entries into a headless CMS, so new work can be published and edited without touching the code.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing -->
+    <section class="section">
+      <div class="container">
+        <div class="thesis">
+          <p class="viz-h">AI didn't replace the design work — it collapsed the distance
+          between an idea and a working version of it.</p>
+          <p class="viz-lead mt-16">The scarce resource stopped being production time and became
+          judgment. That's the shift I'm betting my practice on — and this is the first proof.</p>
+        </div>
+
+        <div class="back-link mt-32">
+          <a class="btn btn--ghost" href="ai.html">← Back to the AI Lab</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="main.js"></script>
+</body>
+</html>

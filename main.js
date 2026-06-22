@@ -7,6 +7,7 @@
 const NAV_LINKS = [
   { label: 'Home', href: 'index.html' },
   { label: 'Work', href: 'work.html' },
+  { label: 'AI Labs', href: 'ai.html' },
   { label: 'Contact', href: 'index.html#contact' },
 ];
 
@@ -26,13 +27,14 @@ function currentPage() {
   return base === '' ? 'index' : base;
 }
 
-// Project detail pages (project-*.html) live under the Work section,
-// so the Work nav link stays highlighted on them.
+// Detail pages live under their section, so the section nav link stays
+// highlighted on them: project-*.html → Work, ai-*.html → AI.
 function isActive(href) {
   const here = currentPage();
   const target = href.replace(/\.html$/, '');
   if (target === here) return true;
   if (target === 'work' && here.startsWith('project-')) return true;
+  if (target === 'ai' && here.startsWith('ai-')) return true;
   return false;
 }
 
