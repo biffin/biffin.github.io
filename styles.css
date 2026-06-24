@@ -1082,16 +1082,16 @@ a.lab-card:hover .lab-card__cta { color: var(--color-driftwood); }
 .metricrow--total { border-bottom: none; padding-bottom: 0; }
 .metricrow--total .metricrow__k, .metricrow--total .metricrow__v { font-size: 15px; color: var(--color-midnight-ink); font-weight: 500; }
 
-/* --- Metric explainer ladder (build log #02) --- */
-.metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-16); margin-top: var(--spacing-32); }
-.metric { background: var(--color-warm-sand); border: 1px solid var(--color-ash-border); border-radius: var(--radius-cards); padding: var(--spacing-24); }
-.metric--accent { background: var(--color-midnight-ink); border-color: var(--color-midnight-ink); }
-.metric__k { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-fog); }
-.metric__q { display: block; font-family: var(--font-waldenburg); font-weight: 300; font-size: 18px; line-height: 1.3; margin-top: var(--spacing-12); color: var(--color-midnight-ink); }
-.metric__s { display: block; font-family: var(--font-mono); font-size: 12px; color: var(--color-driftwood); margin-top: var(--spacing-12); }
-.metric--accent .metric__k { color: var(--color-silver-mist); }
-.metric--accent .metric__q { color: #fff; }
-.metric--accent .metric__s { color: var(--color-silver-mist); }
+/* --- Score explainer ladder (build log #02) --- */
+.scoredefs { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-16); margin-top: var(--spacing-32); }
+.scoredef { display: flex; flex-direction: column; background: var(--color-warm-sand); border: 1px solid var(--color-ash-border); border-radius: var(--radius-cards); padding: var(--spacing-24); }
+.scoredef--accent { background: var(--color-midnight-ink); border-color: var(--color-midnight-ink); }
+.scoredef__k { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-fog); }
+.scoredef__q { font-family: var(--font-waldenburg); font-weight: 300; font-size: 18px; line-height: 1.3; margin-top: var(--spacing-12); color: var(--color-midnight-ink); }
+.scoredef__s { font-family: var(--font-mono); font-size: 12px; color: var(--color-driftwood); margin-top: auto; padding-top: var(--spacing-12); }
+.scoredef--accent .scoredef__k { color: var(--color-silver-mist); }
+.scoredef--accent .scoredef__q { color: #fff; }
+.scoredef--accent .scoredef__s { color: var(--color-silver-mist); }
 
 /* --- Visual file tree (build log #02) --- */
 .filetree { background: var(--color-midnight-ink); border-radius: var(--radius-cardlarge); padding: var(--spacing-32); margin-top: var(--spacing-32); font-family: var(--font-mono); font-size: 13px; line-height: 1.5; max-width: 720px; }
@@ -1123,7 +1123,7 @@ a.lab-card:hover .lab-card__cta { color: var(--color-driftwood); }
   .outcomes { grid-template-columns: 1fr; }
   .roadmap { grid-template-columns: 1fr; }
   .archetypes { grid-template-columns: repeat(2, 1fr); }
-  .metrics { grid-template-columns: 1fr; }
+  .scoredefs { grid-template-columns: repeat(2, 1fr); }
   .ingredients { grid-template-columns: repeat(2, 1fr); }
   .layer { flex-wrap: wrap; gap: var(--spacing-8); }
   .layer__name { min-width: 0; flex: 1 1 100%; }
@@ -1135,4 +1135,5 @@ a.lab-card:hover .lab-card__cta { color: var(--color-driftwood); }
 }
 @media (max-width: 640px) {
   .fanout__cards { grid-template-columns: repeat(2, 1fr); }
+  .scoredefs { grid-template-columns: 1fr; }
 }
