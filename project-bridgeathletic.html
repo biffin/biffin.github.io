@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BridgeAthletic — Biffin Francis</title>
+  <meta name="description" content="BridgeAthletic mobile app redesign — rebuilding a 7-year-old training app for the remote-workout era, with one experience that serves both elite coaches and first-time athletes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300&family=Inter:wght@400;500&family=Roboto+Condensed:wght@400;500;700&family=Space+Grotesk:wght@700&family=JetBrains+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="site-nav"></div>
+
+  <main>
+    <!-- Hero -->
+    <section class="section--tight">
+      <div class="container">
+        <a class="case-back" href="work.html">← All work</a>
+        <h1 class="display mt-32">BridgeAthletic — Mobile App Redesign</h1>
+        <p class="eyebrow mt-16">UI/UX · User Research · 2020–2021</p>
+        <p class="hero__intro mt-24" style="max-width: 680px;">
+          BridgeAthletic's training app hadn't had a major mobile update in seven years. Then COVID-19
+          pushed training out of the gym and onto phones overnight. I led the research and redesign of
+          the mobile app — a world-class experience that had to work for two very different people at
+          once: the elite coach programming workouts, and the first-timer following them.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--secondary mt-24" href="https://www.bridgeathletic.com/" target="_blank" rel="noopener">Visit BridgeAthletic ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="section--compact">
+      <div class="container">
+        <p class="eyebrow">Project overview</p>
+        <div class="card card--large mt-24">
+          <div class="case-overview">
+            <div class="case-overview__item">
+              <span class="case-overview__label">Role</span>
+              <span class="case-overview__value">User Research, UX &amp; Visual Design</span>
+            </div>
+            <div class="case-overview__item">
+              <span class="case-overview__label">Timeline</span>
+              <span class="case-overview__value">2020–2021 · during COVID-19</span>
+            </div>
+            <div class="case-overview__item">
+              <span class="case-overview__label">Scope</span>
+              <span class="case-overview__value">Mobile app redesign — coach + athlete</span>
+            </div>
+            <div class="case-overview__item">
+              <span class="case-overview__label">Team</span>
+              <span class="case-overview__value">CTO, Head of CS, Tech Lead, + design across India, US &amp; Vietnam</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Body -->
+    <section class="section--tight">
+      <div class="container stack-40">
+
+        <div class="case-block">
+          <div class="case-block__title">The challenge</div>
+          <div class="case-block__body">
+            <p>The existing mobile app was designed seven years earlier and had never had a major UI
+            refresh. When COVID-19 shut the gyms, remote workouts spiked — and the dated app suddenly
+            became the primary way athletes trained. It couldn't carry that weight.</p>
+            <p>The brief was twofold: deliver a <strong>visually world-class</strong> experience, and
+            <strong>reduce complexity by user type</strong> — the same app is used by professional
+            athletes and by people brand new to fitness, and one size was fitting neither.</p>
+            <figure class="case-figure case-figure--inline">
+              <img src="images/bridgeathletic-before-after.jpg" alt="Before and after — the old all-black Performance Log screen beside the redesigned Today's Summary with a colourful activity-ring dashboard" />
+              <figcaption>Before &amp; after — a flat, all-black log becomes a glanceable “Today's Summary” with activity rings, wellness, recovery, and training at a glance.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <hr class="case-divider" />
+
+        <div class="case-block">
+          <div class="case-block__title">Listening first</div>
+          <div class="case-block__body">
+            <p>I ran an open-ended survey plus interviews, and folded in the Customer Success team's
+            prior research. The scores were blunt about where we stood:</p>
+            <div class="metric-list">
+              <div class="metric">
+                <span class="metric__label">Experience using the app while working out</span>
+                <span class="metric__bar"><span class="metric__fill" style="width:40%"></span></span>
+                <span class="metric__val">4<small>/10</small></span>
+              </div>
+              <div class="metric">
+                <span class="metric__label">Rating for the look &amp; feel of the app</span>
+                <span class="metric__bar"><span class="metric__fill" style="width:35%"></span></span>
+                <span class="metric__val">3.5<small>/10</small></span>
+              </div>
+              <div class="metric">
+                <span class="metric__label">Ease of finding a particular thing in the app</span>
+                <span class="metric__bar"><span class="metric__fill" style="width:60%"></span></span>
+                <span class="metric__val">6<small>/10</small></span>
+              </div>
+              <div class="metric">
+                <span class="metric__label">Felt the UI needed to improve vs. the competition</span>
+                <span class="metric__bar"><span class="metric__fill" style="width:80%"></span></span>
+                <span class="metric__val">80<small>%</small></span>
+              </div>
+            </div>
+            <p><strong>The takeaway:</strong> users were clear the UI looked outdated and had to change.
+            They were neutral on the underlying UX — and willing to accept change for a more seamless
+            experience. That gave me room to rethink the visuals boldly while keeping flows familiar.</p>
+          </div>
+        </div>
+
+        <hr class="case-divider" />
+
+        <div class="case-block">
+          <div class="case-block__title">Learning from the field</div>
+          <div class="case-block__body">
+            <p>I benchmarked two categories: mainstream fitness apps people already loved
+            (<strong>Apple Fitness, Fitbit, Strava, Trainerize</strong>), and our direct
+            strength-and-conditioning competitor (<strong>TrainHeroic</strong>).</p>
+            <ul>
+              <li>Commercial apps win on <strong>outcomes</strong> — they lean on analytics to show progress.</li>
+              <li>The best experiences <strong>reduce manual input</strong>, pulling automated data from smart watches.</li>
+              <li>But commercial apps lack the <strong>in-depth analysis</strong> a serious S&amp;C app provides.</li>
+            </ul>
+            <p>That reframed the work: our <strong>features were already superior</strong> — it was the
+            <strong>dated interface of our direct competition</strong> we had to beat. Match the polish
+            of consumer apps, keep the depth coaches rely on.</p>
+          </div>
+        </div>
+
+        <hr class="case-divider" />
+
+        <div class="case-block">
+          <div class="case-block__title">Two audiences, six profiles</div>
+          <div class="case-block__body">
+            <p>I split the user base into two groups — and six sub-personas — because their goals,
+            contexts, and even their <em>hands</em> were different. Each insight became a design rule.</p>
+            <div class="persona-grid">
+              <div class="persona">
+                <span class="persona__tag">Group 01</span>
+                <h3 class="persona__name">The Coach</h3>
+                <p class="persona__desc">Builds training and keeps an eye on every athlete under their profile. <span class="persona__sub">Military coach · S&amp;C coach · Personal trainer</span></p>
+                <div class="persona__cols">
+                  <div>
+                    <span class="persona__h">What's true</span>
+                    <ul>
+                      <li>Online programming is still a new concept — most run on Excel &amp; paper.</li>
+                      <li>Field &amp; military settings often lack internet.</li>
+                      <li>They train multiple players in a single sitting.</li>
+                      <li>Often well-built, with big hands.</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <span class="persona__h">So I designed for</span>
+                    <ul>
+                      <li>The familiarity of Excel — fast data entry, smooth onboarding.</li>
+                      <li>Offline mode with easy upload/download of results.</li>
+                      <li>Viewing &amp; analysing multiple athletes at once.</li>
+                      <li>Generous touch targets for every clickable control.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="persona">
+                <span class="persona__tag">Group 02</span>
+                <h3 class="persona__name">The Athlete</h3>
+                <p class="persona__desc">Follows the workout their coach assigns, then logs the result. <span class="persona__sub">Military trainee · Professional athlete · Fitness enthusiast</span></p>
+                <div class="persona__cols">
+                  <div>
+                    <span class="persona__h">What's true</span>
+                    <ul>
+                      <li>Already fluent in mainstream commercial fitness apps.</li>
+                      <li>Gyms &amp; military settings often lack connectivity.</li>
+                      <li>Need motivation to keep showing up.</li>
+                      <li>Want to reach their coach to resolve questions fast.</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <span class="persona__h">So I designed for</span>
+                    <ul>
+                      <li>A consumer-app feel to cut the learning curve.</li>
+                      <li>Offline logging with easy sync.</li>
+                      <li>Peer comparisons &amp; their own history for motivation.</li>
+                      <li>A quick line to coaches, mid-workout.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="case-divider" />
+
+        <div class="case-block">
+          <div class="case-block__title">Mapping the structure</div>
+          <div class="case-block__body">
+            <p>I grounded the redesign in three real scenarios — an individual with a personal trainer,
+            an athlete training off-season, and an athlete in-season with a coach — then drew a
+            high-level information architecture for the whole app.</p>
+            <figure class="case-figure case-figure--inline">
+              <img src="images/bridgeathletic-ia.jpg" alt="High-level information architecture diagram mapping the app from the home page through analytics, workout, programs, exercise and chat flows" />
+              <figcaption>The high-level information architecture — every flow from home through workouts, analytics, programs, and chat.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <hr class="case-divider" />
+
+        <div class="case-block">
+          <div class="case-block__title">From wireframes to UI</div>
+          <div class="case-block__body">
+            <p>I worked low to high — pinning down structure and flow in greyscale before layering on
+            the new visual language.</p>
+            <figure class="case-figure case-figure--inline">
+              <img src="images/bridgeathletic-lowfi.jpg" alt="Low-fidelity wireframes of six app screens — calendar and performance log, movement prep, push-ups detail, athlete room, profile, and analytics" />
+              <figcaption>Low fidelity — getting structure and flow right across the core screens first.</figcaption>
+            </figure>
+            <figure class="case-figure case-figure--inline">
+              <img src="images/bridgeathletic-hifi.jpg" alt="High-fidelity redesigned screens — dark UI with neon accents showing analytics, today's summary, strength workouts, workout summary with charts, and program detail" />
+              <figcaption>High fidelity — a dark UI with neon accents, glanceable analytics, and charts that make progress feel earned.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <hr class="case-divider" />
+
+        <div class="case-block">
+          <div class="case-block__title">The design language</div>
+          <div class="case-block__body">
+            <p>A redesign lives or dies on its system, so I built one — a dark base with high-energy
+            neon accents, confident on a phone in a gym and legible mid-set. Three principles held it
+            together:</p>
+
+            <div class="bds">
+              <div class="bds-principles">
+                <div class="bds-principle">
+                  <span class="bds-principle__num">01</span>
+                  <span class="bds-principle__title">Dark by default</span>
+                  <p class="bds-principle__desc">A near-black canvas cuts glare in the gym and lets data and neon do the talking.</p>
+                </div>
+                <div class="bds-principle">
+                  <span class="bds-principle__num">02</span>
+                  <span class="bds-principle__title">Neon means something</span>
+                  <p class="bds-principle__desc">One vivid hue per metric — colour is signal, never decoration.</p>
+                </div>
+                <div class="bds-principle">
+                  <span class="bds-principle__num">03</span>
+                  <span class="bds-principle__title">Glanceable by design</span>
+                  <p class="bds-principle__desc">Rings, pills and oversized numerals read in a single mid-set glance.</p>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="bds-h">Colour — base &amp; surfaces</h4>
+                <div class="bds-swatches">
+                  <div class="bds-swatch">
+                    <span class="bds-swatch__chip" style="background:#11111A"></span>
+                    <span class="bds-swatch__meta"><span class="bds-swatch__role">Ink</span><span class="bds-swatch__use">App canvas</span><span class="bds-swatch__hex">#11111A</span></span>
+                  </div>
+                  <div class="bds-swatch">
+                    <span class="bds-swatch__chip" style="background:#252E3A"></span>
+                    <span class="bds-swatch__meta"><span class="bds-swatch__role">Charcoal</span><span class="bds-swatch__use">Card surface</span><span class="bds-swatch__hex">#252E3A</span></span>
+                  </div>
+                  <div class="bds-swatch">
+                    <span class="bds-swatch__chip" style="background:#3C4553"></span>
+                    <span class="bds-swatch__meta"><span class="bds-swatch__role">Slate</span><span class="bds-swatch__use">Raised / dividers</span><span class="bds-swatch__hex">#3C4553</span></span>
+                  </div>
+                  <div class="bds-swatch">
+                    <span class="bds-swatch__chip bds-swatch__chip--bright" style="background:#A0FF6D"></span>
+                    <span class="bds-swatch__meta"><span class="bds-swatch__role">Volt</span><span class="bds-swatch__use">Primary action &amp; focus</span><span class="bds-swatch__hex">#A0FF6D</span></span>
+                  </div>
+                </div>
+
+                <h4 class="bds-h" style="margin-top: var(--spacing-24)">Colour — signal palette</h4>
+                <div class="bds-swatches">
+                  <div class="bds-swatch">
+                    <span class="bds-swatch__chip bds-swatch__chip--bright" style="background:#6DF6FF"></span>
+                    <span class="bds-swatch__meta"><span class="bds-swatch__role">Aqua</span><span class="bds-swatch__use">Wellness</span><span class="bds-swatch__hex">#6DF6FF</span></span>
+                  </div>
+                  <div class="bds-swatch">
+                    <span class="bds-swatch__chip bds-swatch__chip--bright" style="background:#6D7CFF"></span>
+                    <span class="bds-swatch__meta"><span class="bds-swatch__role">Pulse</span><span class="bds-swatch__use">Training</span><span class="bds-swatch__hex">#6D7CFF</span></span>
+                  </div>
+                  <div class="bds-swatch">
+                    <span class="bds-swatch__chip bds-swatch__chip--bright" style="background:#C86DFF"></span>
+                    <span class="bds-swatch__meta"><span class="bds-swatch__role">Bloom</span><span class="bds-swatch__use">Recovery</span><span class="bds-swatch__hex">#C86DFF</span></span>
+                  </div>
+                  <div class="bds-swatch">
+                    <span class="bds-swatch__chip bds-swatch__chip--bright" style="background:#FA5762"></span>
+                    <span class="bds-swatch__meta"><span class="bds-swatch__role">Flare</span><span class="bds-swatch__use">Streaks &amp; alerts</span><span class="bds-swatch__hex">#FA5762</span></span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="bds-h">Type scale — Roboto Condensed</h4>
+                <div class="bds-type">
+                  <div class="bds-type__row">
+                    <span class="bds-type__spec bds-type__spec--t1">Today's Summary</span>
+                    <span class="bds-type__meta">T1 Title · 36 · Bold</span>
+                  </div>
+                  <div class="bds-type__row">
+                    <span class="bds-type__spec bds-type__spec--h1">Bench shoulder volume day</span>
+                    <span class="bds-type__meta">H1 · 22 · Bold</span>
+                  </div>
+                  <div class="bds-type__row">
+                    <span class="bds-type__spec bds-type__spec--h2">Movement Prep</span>
+                    <span class="bds-type__meta">H2 · 18 · Bold</span>
+                  </div>
+                  <div class="bds-type__row">
+                    <span class="bds-type__spec bds-type__spec--h3">Performance Log</span>
+                    <span class="bds-type__meta">H3 · 16 · Bold</span>
+                  </div>
+                  <div class="bds-type__row">
+                    <span class="bds-type__spec bds-type__spec--h4">History &amp; Comments</span>
+                    <span class="bds-type__meta">H4 · 14 · Bold</span>
+                  </div>
+                  <div class="bds-type__row">
+                    <span class="bds-type__spec bds-type__spec--body">Not completed today — this should be completed everyday.</span>
+                    <span class="bds-type__meta">Body · 14 · Medium</span>
+                  </div>
+                  <div class="bds-type__row">
+                    <span class="bds-type__spec bds-type__spec--cap">60 MIN · 27 SETS</span>
+                    <span class="bds-type__meta">Caption · 12 · Bold</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="bds-h">Components, on their home turf</h4>
+                <div class="bds-stage">
+                  <div class="bds-stage__cell">
+                    <span class="bds-stage__label">Day selector</span>
+                    <div class="bds-days">
+                      <span class="bds-day bds-day--on">S<span class="bds-day__n">6</span></span>
+                      <span class="bds-day">M<span class="bds-day__n">7</span></span>
+                      <span class="bds-day">T<span class="bds-day__n">8</span><i class="bds-day__dot"></i></span>
+                      <span class="bds-day">W<span class="bds-day__n">9</span></span>
+                      <span class="bds-day">T<span class="bds-day__n">10</span><i class="bds-day__dot"></i></span>
+                      <span class="bds-day">F<span class="bds-day__n">11</span></span>
+                      <span class="bds-day">S<span class="bds-day__n">12</span></span>
+                    </div>
+                  </div>
+
+                  <div class="bds-stage__cell">
+                    <span class="bds-stage__label">Buttons</span>
+                    <div class="bds-btns">
+                      <span class="bds-btn bds-btn--volt">Start workout</span>
+                      <span class="bds-btn bds-btn--ghost">Continue with Google</span>
+                    </div>
+                  </div>
+
+                  <div class="bds-stage__cell">
+                    <span class="bds-stage__label">Daily readiness ring</span>
+                    <div class="bds-ring">
+                      <svg viewBox="0 0 120 120" width="104" height="104" role="img" aria-label="Concentric activity rings — wellness, training and recovery">
+                        <g fill="none" stroke-width="9" stroke-linecap="round">
+                          <circle cx="60" cy="60" r="50" stroke="#1c2430" />
+                          <circle cx="60" cy="60" r="38" stroke="#1c2430" />
+                          <circle cx="60" cy="60" r="26" stroke="#1c2430" />
+                          <circle cx="60" cy="60" r="50" stroke="#6DF6FF" stroke-dasharray="226 314" transform="rotate(-90 60 60)" />
+                          <circle cx="60" cy="60" r="38" stroke="#6D7CFF" stroke-dasharray="131 239" transform="rotate(-90 60 60)" />
+                          <circle cx="60" cy="60" r="26" stroke="#C86DFF" stroke-dasharray="69 163" transform="rotate(-90 60 60)" />
+                        </g>
+                      </svg>
+                      <div class="bds-tags">
+                        <span class="bds-tag" style="background:#6DF6FF">20% Wellness</span>
+                        <span class="bds-tag" style="background:#6D7CFF">10% Training</span>
+                        <span class="bds-tag" style="background:#C86DFF">7% Recovery</span>
+                        <span class="bds-tag" style="background:#A0FF6D">6% Mindfulness</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bds-stage__cell">
+                    <span class="bds-stage__label">List card</span>
+                    <div class="bds-card">
+                      <span class="bds-card__thumb"></span>
+                      <span class="bds-card__text">
+                        <span class="bds-card__t">Performance Log</span>
+                        <span class="bds-card__s">Trojan's Tennis Team</span>
+                      </span>
+                      <span class="bds-card__stat">60 min · 27 sets</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="case-divider" />
+
+        <div class="case-block">
+          <div class="case-block__title">Validating it</div>
+          <div class="case-block__body">
+            <p>I tested at two levels. <strong>One-to-one</strong> moderated remote sessions with five
+            users of differing attitudes toward training — walking each through scenarios while they
+            thought aloud, then a short questionnaire. <strong>One-to-many</strong> with the in-house
+            team, running the same scenario script so anyone could flag a bug or gap against the project
+            tracker. The post-launch survey is below.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact -->
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">The impact</p>
+        <div class="stat-grid mt-24">
+          <div class="card">
+            <div class="stat__num">100%</div>
+            <div class="stat__label">Said the new UI made the app easier to use</div>
+          </div>
+          <div class="card">
+            <div class="stat__num">90%</div>
+            <div class="stat__label">Faster program creation — from 40 minutes to under 4</div>
+          </div>
+          <div class="card">
+            <div class="stat__num">70%</div>
+            <div class="stat__label">Lift in NPS after the redesign rolled out</div>
+          </div>
+          <div class="card">
+            <div class="stat__num">85%</div>
+            <div class="stat__label">Rated the new app UI, and said coach–athlete communication improved</div>
+          </div>
+        </div>
+
+        <div class="card card--large mt-32">
+          <p class="eyebrow">Post-launch survey</p>
+          <div class="metric-list mt-16">
+            <div class="metric">
+              <span class="metric__label">Felt more confident running a session &amp; logging results</span>
+              <span class="metric__bar"><span class="metric__fill" style="width:80%"></span></span>
+              <span class="metric__val">80<small>%</small></span>
+            </div>
+            <div class="metric">
+              <span class="metric__label">Said the new analytics were easy to understand</span>
+              <span class="metric__bar"><span class="metric__fill" style="width:75%"></span></span>
+              <span class="metric__val">75<small>%</small></span>
+            </div>
+            <div class="metric">
+              <span class="metric__label">Would recommend the app to friends or family</span>
+              <span class="metric__bar"><span class="metric__fill" style="width:60%"></span></span>
+              <span class="metric__val">60<small>%</small></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__cta">
+          <a class="btn btn--secondary mt-32" href="work.html">← Back to all work</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="main.js"></script>
+</body>
+</html>

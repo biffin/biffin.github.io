@@ -42,6 +42,16 @@ const PROJECTS = [
     thumbLabel: 'Helpshift',
   },
   {
+    slug: 'project-bridgeathletic.html',
+    title: 'BridgeAthletic — Mobile App Redesign',
+    meta: 'UI/UX · User Research · 2020–2021',
+    summary:
+      'Rebuilding a 7-year-old training app for the remote-workout era — one experience that serves both elite coaches and first-time athletes.',
+    thumb: 'thumb--4',
+    thumbImage: 'images/bridgeathletic-logo.png',
+    thumbLabel: 'BridgeAthletic',
+  },
+  {
     slug: 'project-monash.html',
     title: 'Monash — “Get Started” Redesign',
     meta: 'UI/UX Design · 2017',
