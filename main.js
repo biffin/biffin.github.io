@@ -56,16 +56,36 @@ function renderNav() {
     </nav>`;
 }
 
+// Minimal, scale-proof footer: section hubs only — individual case studies
+// live on the Work / AI Lab pages (and stay crawlable via the sitemap and the
+// static fallback nav in each page), so this never crowds as work is added.
 function renderFooter() {
   const year = new Date().getFullYear();
   return `
     <footer class="footer">
       <div class="footer__inner">
-        <span>© ${year} ${SITE.name} — Senior Product Designer</span>
-        <div class="footer__links">
-          <a href="mailto:${SITE.email}">Email</a>
-          <a href="${SITE.linkedin}" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="index.html#contact">Contact</a>
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a class="footer__brand-name" href="index.html"><span class="logo__bars">||</span> ${SITE.name.toUpperCase()}</a>
+            <span class="footer__brand-role">Senior Product Designer</span>
+          </div>
+          <nav class="footer__nav" aria-label="Footer">
+            <div class="footer__col">
+              <span class="footer__h">Explore</span>
+              <a href="index.html">Home</a>
+              <a href="work.html">Work</a>
+              <a href="ai.html">AI Lab</a>
+            </div>
+            <div class="footer__col">
+              <span class="footer__h">Connect</span>
+              <a href="mailto:${SITE.email}">Email</a>
+              <a href="${SITE.linkedin}" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="index.html#contact">Contact</a>
+            </div>
+          </nav>
+        </div>
+        <div class="footer__bar">
+          <span>© ${year} ${SITE.name} — Senior Product Designer</span>
         </div>
       </div>
     </footer>`;

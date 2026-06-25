@@ -18,7 +18,7 @@ const PROJECTS = [
     summary:
       'Solo designer on an end-to-end web app and brand identity that lets dental clinics offer transparent, flexible payment plans.',
     thumb: 'thumb--1',
-    thumbImage: 'images/credi8-logo.png',
+    thumbImage: 'images/credi8-logo.webp',
     thumbLabel: 'Credi8',
   },
   {
@@ -28,7 +28,7 @@ const PROJECTS = [
     summary:
       'A unified framework for measuring and reporting design impact across Sunlife’s global product teams — turning scattered metrics into one shared standard.',
     thumb: 'thumb--2',
-    thumbImage: 'images/sunlife-logo.png',
+    thumbImage: 'images/sunlife-logo.webp',
     thumbLabel: 'Sunlife',
   },
   {
@@ -38,7 +38,7 @@ const PROJECTS = [
     summary:
       'Redesigning a customer-support Help Center into a modern, modular self-service experience for a platform serving 33M+ users.',
     thumb: 'thumb--4',
-    thumbImage: 'images/helpshift-logo.png',
+    thumbImage: 'images/helpshift-logo.webp',
     thumbLabel: 'Helpshift',
   },
   {
@@ -48,7 +48,7 @@ const PROJECTS = [
     summary:
       'Rebuilding a 7-year-old training app for the remote-workout era — one experience that serves both elite coaches and first-time athletes.',
     thumb: 'thumb--4',
-    thumbImage: 'images/bridgeathletic-logo.png',
+    thumbImage: 'images/bridgeathletic-logo.webp',
     thumbLabel: 'BridgeAthletic',
   },
   {
@@ -58,7 +58,7 @@ const PROJECTS = [
     summary:
       'A semester-based onboarding journey guiding 15,000+ international students, replacing a scattered web of links with one structured starting point.',
     thumb: 'thumb--3',
-    thumbImage: 'images/monash-logo.png',
+    thumbImage: 'images/monash-logo.webp',
     thumbLabel: 'Monash',
   },
   {
@@ -68,14 +68,16 @@ const PROJECTS = [
     summary:
       'Designing the on-device touchscreen UI for the C300 industrial 3D printer — usable by technical and non-technical operators, within tight hardware limits.',
     thumb: 'thumb--5',
-    thumbImage: 'images/infillcube-logo.png',
+    thumbImage: 'images/infillcube-logo.webp',
     thumbLabel: 'Infillcube',
   },
 ];
 
-function renderProjectCard(p) {
+function renderProjectCard(p, i) {
+  // First card is above the fold on the Work page — load it eagerly for LCP.
+  const load = i === 0 ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
   const thumbContent = p.thumbImage
-    ? `<img class="project-card__thumb-img" src="${p.thumbImage}" alt="${p.title} logo" />`
+    ? `<img class="project-card__thumb-img" src="${p.thumbImage}" alt="${p.title} logo" width="720" height="388" ${load} decoding="async" />`
     : `<span class="project-card__thumb-label">${p.thumbLabel}</span>`;
   return `
     <a class="project-card" href="${p.slug}">

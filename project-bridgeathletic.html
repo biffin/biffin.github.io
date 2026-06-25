@@ -3,12 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#fdfcfc" />
   <title>BridgeAthletic — Biffin Francis</title>
   <meta name="description" content="BridgeAthletic mobile app redesign — rebuilding a 7-year-old training app for the remote-workout era, with one experience that serves both elite coaches and first-time athletes." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300&family=Inter:wght@400;500&family=Roboto+Condensed:wght@400;500;700&family=Space+Grotesk:wght@700&family=JetBrains+Mono&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="canonical" href="https://biffin.github.io/project-bridgeathletic.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Biffin Francis" />
+  <meta property="og:title" content="BridgeAthletic — Biffin Francis" />
+  <meta property="og:description" content="BridgeAthletic mobile app redesign — rebuilding a 7-year-old training app for the remote-workout era, with one experience that serves both elite coaches and first-time athletes." />
+  <meta property="og:url" content="https://biffin.github.io/project-bridgeathletic.html" />
+  <meta property="og:image" content="https://biffin.github.io/images/og-cover.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BridgeAthletic — Biffin Francis" />
+  <meta name="twitter:description" content="BridgeAthletic mobile app redesign — rebuilding a 7-year-old training app for the remote-workout era, with one experience that serves both elite coaches and first-time athletes." />
+  <meta name="twitter:image" content="https://biffin.github.io/images/og-cover.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","name":"BridgeAthletic — Biffin Francis","headline":"BridgeAthletic — Mobile App Redesign","url":"https://biffin.github.io/project-bridgeathletic.html","image":"https://biffin.github.io/images/og-cover.png","description":"BridgeAthletic mobile app redesign — rebuilding a 7-year-old training app for the remote-workout era, with one experience that serves both elite coaches and first-time athletes.","author":{"@type":"Person","name":"Biffin Francis","url":"https://biffin.github.io/"}}</script>
 </head>
 <body>
   <div id="site-nav"></div>
@@ -73,7 +92,7 @@
             <strong>reduce complexity by user type</strong> — the same app is used by professional
             athletes and by people brand new to fitness, and one size was fitting neither.</p>
             <figure class="case-figure case-figure--inline">
-              <img src="images/bridgeathletic-before-after.jpg" alt="Before and after — the old all-black Performance Log screen beside the redesigned Today's Summary with a colourful activity-ring dashboard" />
+              <img src="images/bridgeathletic-before-after.webp" alt="Before and after — the old all-black Performance Log screen beside the redesigned Today's Summary with a colourful activity-ring dashboard" width="1600" height="892" loading="eager" fetchpriority="high" decoding="async" />
               <figcaption>Before &amp; after — a flat, all-black log becomes a glanceable “Today's Summary” with activity rings, wellness, recovery, and training at a glance.</figcaption>
             </figure>
           </div>
@@ -204,7 +223,7 @@
             an athlete training off-season, and an athlete in-season with a coach — then drew a
             high-level information architecture for the whole app.</p>
             <figure class="case-figure case-figure--inline">
-              <img src="images/bridgeathletic-ia.jpg" alt="High-level information architecture diagram mapping the app from the home page through analytics, workout, programs, exercise and chat flows" />
+              <img src="images/bridgeathletic-ia.webp" alt="High-level information architecture diagram mapping the app from the home page through analytics, workout, programs, exercise and chat flows" width="1245" height="1600" loading="lazy" decoding="async" />
               <figcaption>The high-level information architecture — every flow from home through workouts, analytics, programs, and chat.</figcaption>
             </figure>
           </div>
@@ -218,11 +237,11 @@
             <p>I worked low to high — pinning down structure and flow in greyscale before layering on
             the new visual language.</p>
             <figure class="case-figure case-figure--inline">
-              <img src="images/bridgeathletic-lowfi.jpg" alt="Low-fidelity wireframes of six app screens — calendar and performance log, movement prep, push-ups detail, athlete room, profile, and analytics" />
+              <img src="images/bridgeathletic-lowfi.webp" alt="Low-fidelity wireframes of six app screens — calendar and performance log, movement prep, push-ups detail, athlete room, profile, and analytics" width="1154" height="1600" loading="lazy" decoding="async" />
               <figcaption>Low fidelity — getting structure and flow right across the core screens first.</figcaption>
             </figure>
             <figure class="case-figure case-figure--inline">
-              <img src="images/bridgeathletic-hifi.jpg" alt="High-fidelity redesigned screens — dark UI with neon accents showing analytics, today's summary, strength workouts, workout summary with charts, and program detail" />
+              <img src="images/bridgeathletic-hifi.webp" alt="High-fidelity redesigned screens — dark UI with neon accents showing analytics, today's summary, strength workouts, workout summary with charts, and program detail" width="1042" height="1600" loading="lazy" decoding="async" />
               <figcaption>High fidelity — a dark UI with neon accents, glanceable analytics, and charts that make progress feel earned.</figcaption>
             </figure>
           </div>
@@ -461,7 +480,10 @@
     </section>
   </main>
 
-  <div id="site-footer"></div>
+  <div id="site-footer">
+    <!-- Static fallback: crawlable links for non-JS clients; main.js replaces this for visitors -->
+    <nav class="footer-fallback" aria-label="Site links"><a href="index.html">Home</a><a href="work.html">Work</a><a href="ai.html">AI Lab</a><a href="project-credi8.html">Credi8</a><a href="project-sunlife.html">Sunlife</a><a href="project-helpshift.html">Helpshift</a><a href="project-bridgeathletic.html">BridgeAthletic</a><a href="project-monash.html">Monash</a><a href="project-infillcube.html">Infillcube</a><a href="ai-portfolio.html">Building this portfolio with Claude</a><a href="ai-ux-research.html">Usability testing with synthetic users</a></nav>
+  </div>
   <script src="main.js"></script>
 </body>
 </html>

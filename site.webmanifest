@@ -1,0 +1,13 @@
+{
+  "name": "Biffin Francis — Senior Product Designer",
+  "short_name": "Biffin Francis",
+  "description": "Portfolio of Biffin Francis, Senior Product Designer & AI practitioner.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fdfcfc",
+  "theme_color": "#fdfcfc",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

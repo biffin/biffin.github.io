@@ -3,12 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#fdfcfc" />
   <title>Infillcube — Biffin Francis</title>
   <meta name="description" content="Infillcube case study — designing the on-device touchscreen UI for the C300 industrial 3D printer, usable by technical and non-technical operators within tight hardware limits." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300&family=Inter:wght@400;500&family=Space+Grotesk:wght@700&family=JetBrains+Mono&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="canonical" href="https://biffin.github.io/project-infillcube.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Biffin Francis" />
+  <meta property="og:title" content="Infillcube — Biffin Francis" />
+  <meta property="og:description" content="Infillcube case study — designing the on-device touchscreen UI for the C300 industrial 3D printer, usable by technical and non-technical operators within tight hardware limits." />
+  <meta property="og:url" content="https://biffin.github.io/project-infillcube.html" />
+  <meta property="og:image" content="https://biffin.github.io/images/og-cover.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Infillcube — Biffin Francis" />
+  <meta name="twitter:description" content="Infillcube case study — designing the on-device touchscreen UI for the C300 industrial 3D printer, usable by technical and non-technical operators within tight hardware limits." />
+  <meta name="twitter:image" content="https://biffin.github.io/images/og-cover.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","name":"Infillcube — Biffin Francis","headline":"Infillcube — UI for an Industrial 3D Printer","url":"https://biffin.github.io/project-infillcube.html","image":"https://biffin.github.io/images/og-cover.png","description":"Infillcube case study — designing the on-device touchscreen UI for the C300 industrial 3D printer, usable by technical and non-technical operators within tight hardware limits.","author":{"@type":"Person","name":"Biffin Francis","url":"https://biffin.github.io/"}}</script>
 </head>
 <body>
   <div id="site-nav"></div>
@@ -33,7 +52,7 @@
             </div>
           </div>
           <figure class="case-figure">
-            <img src="images/infillcube-product-front.jpg" alt="The Infillcube C300 industrial 3D printer, front view, with its touchscreen interface lit up and a print in progress behind the glass door" />
+            <img src="images/infillcube-product-front.webp" alt="The Infillcube C300 industrial 3D printer, front view, with its touchscreen interface lit up and a print in progress behind the glass door" width="714" height="1000" loading="eager" fetchpriority="high" decoding="async" />
             <figcaption>The C300 — Infillcube's affordable industrial 3D printer, with the touchscreen I designed mounted at the top.</figcaption>
           </figure>
         </div>
@@ -118,7 +137,7 @@
             sacrificed for technical capability, remote support is rare, and dense documentation
             does the heavy lifting the interface should.</p>
             <figure class="case-figure case-figure--inline">
-              <img src="images/infillcube-competitive.jpg" alt="A grid of competitor 3D-printer touchscreen interfaces — most dense, icon-heavy and dark, prioritising technical readouts over guidance" />
+              <img src="images/infillcube-competitive.webp" alt="A grid of competitor 3D-printer touchscreen interfaces — most dense, icon-heavy and dark, prioritising technical readouts over guidance" width="741" height="771" loading="lazy" decoding="async" />
               <figcaption>Competitive teardown — across the category, screens were dense, icon-heavy and built for engineers. Almost none offered remote support or any onboarding for a first-time operator.</figcaption>
             </figure>
           </div>
@@ -149,7 +168,7 @@
             went through a four-way priority matrix (Must-have / Can be done / Nice to have /
             Won't), which defined a tight, focused MVP.</p>
             <figure class="case-figure case-figure--inline">
-              <img src="images/infillcube-userflow.jpg" alt="The C300 print workflow mapped as a vertical flow — Initialization, Design Input, Printer Configuration, Calibration, Print Preview, Remote Monitoring, Pause/Cancel, Post-Printing and Troubleshooting, each with a short description" />
+              <img src="images/infillcube-userflow.webp" alt="The C300 print workflow mapped as a vertical flow — Initialization, Design Input, Printer Configuration, Calibration, Print Preview, Remote Monitoring, Pause/Cancel, Post-Printing and Troubleshooting, each with a short description" width="1411" height="1500" loading="lazy" decoding="async" />
               <figcaption>The nine-step print journey, from power-on to troubleshooting. Mapping it first meant the UI followed how operators actually work — not how the hardware was wired.</figcaption>
             </figure>
           </div>
@@ -164,7 +183,7 @@
             test print-job scenarios quickly — adjusting layout and flow long before a pixel was
             polished.</p>
             <figure class="case-figure case-figure--inline case-figure--medium">
-              <img src="images/infillcube-lowfi.jpg" alt="Low-fidelity greyscale wireframes of the temperature-setting screens — a persistent left rail of Back/Home/Setting/Print and large touch-friendly controls" />
+              <img src="images/infillcube-lowfi.webp" alt="Low-fidelity greyscale wireframes of the temperature-setting screens — a persistent left rail of Back/Home/Setting/Print and large touch-friendly controls" width="634" height="707" loading="lazy" decoding="async" />
               <figcaption>Low-fi wireframes — establishing the persistent left rail, oversized touch targets and the greyscale system early, when changes were cheap.</figcaption>
             </figure>
           </div>
@@ -182,7 +201,7 @@
             confusing material-reset flow and an unclear "unreadable file" error, both fixed
             before launch.</p>
             <figure class="case-figure case-figure--inline">
-              <img src="images/infillcube-highfi.jpg" alt="Grid of final high-fidelity C300 screens in greyscale — temperature control, multi-extruder status, bed temperature keypad, calibration grid, home menu, live print status with progress, settings and movement controls" />
+              <img src="images/infillcube-highfi.webp" alt="Grid of final high-fidelity C300 screens in greyscale — temperature control, multi-extruder status, bed temperature keypad, calibration grid, home menu, live print status with progress, settings and movement controls" width="1432" height="1500" loading="lazy" decoding="async" />
               <figcaption>The high-fidelity system — temperature, calibration, live print status and movement controls. One reusable component set, greyscale throughout, all inside 256&nbsp;KB.</figcaption>
             </figure>
           </div>
@@ -220,7 +239,7 @@
           child for every printer sold. An interface that made the machine easier to run helped
           put it in more hands, and those hands made more arms.</p>
           <figure class="case-figure">
-            <img src="images/infillcube-social.jpg" alt="A news article headlined ‘Extending a 3D-printed prosthetic arm of love’, covering Infillcube's Hands of Hope initiative providing prosthetic arms for children" />
+            <img src="images/infillcube-social.webp" alt="A news article headlined ‘Extending a 3D-printed prosthetic arm of love’, covering Infillcube's Hands of Hope initiative providing prosthetic arms for children" width="506" height="662" loading="lazy" decoding="async" />
             <figcaption>“Hands of Hope” in the press — the C300's social mission, sponsoring a prosthetic arm for a child with every printer sold.</figcaption>
           </figure>
         </div>
@@ -231,7 +250,10 @@
     </section>
   </main>
 
-  <div id="site-footer"></div>
+  <div id="site-footer">
+    <!-- Static fallback: crawlable links for non-JS clients; main.js replaces this for visitors -->
+    <nav class="footer-fallback" aria-label="Site links"><a href="index.html">Home</a><a href="work.html">Work</a><a href="ai.html">AI Lab</a><a href="project-credi8.html">Credi8</a><a href="project-sunlife.html">Sunlife</a><a href="project-helpshift.html">Helpshift</a><a href="project-bridgeathletic.html">BridgeAthletic</a><a href="project-monash.html">Monash</a><a href="project-infillcube.html">Infillcube</a><a href="ai-portfolio.html">Building this portfolio with Claude</a><a href="ai-ux-research.html">Usability testing with synthetic users</a></nav>
+  </div>
   <script src="main.js"></script>
 </body>
 </html>

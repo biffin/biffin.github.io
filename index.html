@@ -3,12 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#fdfcfc" />
   <title>Biffin Francis — Senior Product Designer</title>
   <meta name="description" content="Biffin Francis — Senior Product Designer & AI practitioner with 8 years building UX frameworks, end-to-end experiences, and data-driven design." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300&family=Inter:wght@400;500&family=Space+Grotesk:wght@700&family=JetBrains+Mono&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="canonical" href="https://biffin.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Biffin Francis" />
+  <meta property="og:title" content="Biffin Francis — Senior Product Designer" />
+  <meta property="og:description" content="Biffin Francis — Senior Product Designer &amp; AI practitioner with 8 years building UX frameworks, end-to-end experiences, and data-driven design." />
+  <meta property="og:url" content="https://biffin.github.io/" />
+  <meta property="og:image" content="https://biffin.github.io/images/og-cover.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Biffin Francis — Senior Product Designer" />
+  <meta name="twitter:description" content="Biffin Francis — Senior Product Designer &amp; AI practitioner with 8 years building UX frameworks, end-to-end experiences, and data-driven design." />
+  <meta name="twitter:image" content="https://biffin.github.io/images/og-cover.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Biffin Francis","jobTitle":"Senior Product Designer","url":"https://biffin.github.io/","image":"https://biffin.github.io/images/og-cover.png","description":"Biffin Francis — Senior Product Designer & AI practitioner with 8 years building UX frameworks, end-to-end experiences, and data-driven design.","sameAs":["https://www.linkedin.com/in/biffinfrancis/"]}</script>
 </head>
 <body>
   <div id="site-nav"></div>
@@ -36,13 +55,13 @@
       <div class="container">
         <p class="trustbar__label">Selected companies I've worked with</p>
         <div class="trustbar__logos">
-          <img class="trust-logo trust-logo--credi8" src="images/banner-credi8.png" alt="Credi8" loading="lazy" />
-          <img class="trust-logo trust-logo--sunlife" src="images/banner-sunlife.png" alt="Sun Life Financial" loading="lazy" />
-          <img class="trust-logo trust-logo--talentnet" src="images/banner-talentnet.png" alt="TalentNet" loading="lazy" />
-          <img class="trust-logo trust-logo--helpshift" src="images/banner-helpshift.png" alt="Helpshift" loading="lazy" />
-          <img class="trust-logo trust-logo--bridgeathletic" src="images/banner-bridgeathletic.png" alt="BridgeAthletic" loading="lazy" />
-          <img class="trust-logo trust-logo--monash" src="images/banner-monash.png" alt="Monash University" loading="lazy" />
-          <img class="trust-logo trust-logo--infillcube" src="images/banner-infillcube.png" alt="INFILLCUBE" loading="lazy" />
+          <img class="trust-logo trust-logo--credi8" src="images/banner-credi8.webp" alt="Credi8" width="837" height="157" loading="eager" fetchpriority="high" decoding="async" />
+          <img class="trust-logo trust-logo--sunlife" src="images/banner-sunlife.webp" alt="Sun Life Financial" width="1095" height="470" loading="lazy" decoding="async" />
+          <img class="trust-logo trust-logo--talentnet" src="images/banner-talentnet.webp" alt="TalentNet" width="1114" height="238" loading="lazy" decoding="async" />
+          <img class="trust-logo trust-logo--helpshift" src="images/banner-helpshift.webp" alt="Helpshift" width="919" height="359" loading="lazy" decoding="async" />
+          <img class="trust-logo trust-logo--bridgeathletic" src="images/banner-bridgeathletic.webp" alt="BridgeAthletic" width="582" height="364" loading="lazy" decoding="async" />
+          <img class="trust-logo trust-logo--monash" src="images/banner-monash.webp" alt="Monash University" width="1030" height="320" loading="lazy" decoding="async" />
+          <img class="trust-logo trust-logo--infillcube" src="images/banner-infillcube.webp" alt="INFILLCUBE" width="998" height="334" loading="lazy" decoding="async" />
         </div>
       </div>
     </section>
@@ -237,7 +256,10 @@
     </section>
   </main>
 
-  <div id="site-footer"></div>
+  <div id="site-footer">
+    <!-- Static fallback: crawlable links for non-JS clients; main.js replaces this for visitors -->
+    <nav class="footer-fallback" aria-label="Site links"><a href="index.html">Home</a><a href="work.html">Work</a><a href="ai.html">AI Lab</a><a href="project-credi8.html">Credi8</a><a href="project-sunlife.html">Sunlife</a><a href="project-helpshift.html">Helpshift</a><a href="project-bridgeathletic.html">BridgeAthletic</a><a href="project-monash.html">Monash</a><a href="project-infillcube.html">Infillcube</a><a href="ai-portfolio.html">Building this portfolio with Claude</a><a href="ai-ux-research.html">Usability testing with synthetic users</a></nav>
+  </div>
   <script src="main.js"></script>
 </body>
 </html>
